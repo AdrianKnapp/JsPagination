@@ -11,4 +11,5 @@ links.forEach((link) => {
   link.addEventListener('click', buttonClick);
 });
 
+
 initPage();
