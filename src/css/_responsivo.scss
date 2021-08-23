@@ -1,0 +1,86 @@
+@media (max-width: 545px) {
+  body {
+    font-size: 14px;
+  }
+  .buttons-line .buttons .button {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .buttons-line .buttons .button {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .button {
+    padding: 0 10px;
+  }
+  #json-response {
+    padding: 10px;
+
+    .code-box {
+      padding: 10px 0;
+    }
+  }
+  .table-box {
+    padding: 10px;
+  }
+}
+@media (max-width: 395px) {
+  .buttons-line .buttons .button {
+    padding: 5px 10px;
+
+    span {
+      display: none;
+    }
+
+    #pagination-icon {
+      display: block;
+    }
+  }
+  .buttons-line .buttons .page-status {
+    padding: 5px 2px;
+  }
+  [data-page="previous"] {
+    border-radius: 2px 0 0 2px !important;
+  } 
+  [data-page="next"] {
+    border-radius: 0 2px 2px 0 !important;
+  }
+  #json-response {
+    padding: 10px 5px;
+    border-radius: 2px;
+
+    .code-box {
+      padding: 10px 5px;
+    }
+  }
+  .table-box {
+    padding: 5px;
+    border-radius: 2px;
+  }
+}
+@media (max-width: 370px) {
+  body {
+    font-size: 11px;
+  }
+}
+@media (max-width: 330px) {
+  .container {
+    padding: 5px;
+  }
+  #main {
+    gap: 5px;
+  }
+  .buttons-line {
+    margin-top: 5px;
+  }
+}

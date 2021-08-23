@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Pagination </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="src/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="src/images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="src/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="src/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="src/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="src/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="src/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="src/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="src/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="src/images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="src/images/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="src/images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="src/css/style.min.css">
+</head>
+
+<body>
+  <div class="page-loader"></div>
+  <section>
+    <div class="container">
+      <main id="main">
+        <div class="title">
+          <h1>Fetch pagination</h1>
+          <h4>Made by Adrian Knapp</h4>
+        </div>
+        <div class="pagination">
+          <div class="table-box">
+            <ul>
+              <li>
+                <span>1</span>
+              </li>
+              <li>
+                <span>2</span>
+              </li>
+              <li>
+                <span>3</span>
+              </li>
+              <li>
+                <span>4</span>
+              </li>
+              <li>
+                <span>5</span>
+              </li>
+            </ul>
+            <div class="error-message"></div>
+          </div>
+          <div class="buttons-line">
+            <div class="buttons">
+              <a href="?p=0" data-page="previous" class="button">
+                <img id="pagination-icon" src="src/images/arrow-left.svg" alt="Ícone para paginação">
+                <span> Previous </span>
+              </a>
+              <div class="page-status">
+                <span data-page-status="current">1</span> de <span data-page-status="max">X</span>
+              </div>
+              <a href="?p=1" data-page="next" class="button">
+                <span> Next </span>
+                <img id="pagination-icon" src="src/images/arrow-right.svg" alt="Ícone para paginação">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="json-response">
+          <div class="json-response-title">
+            <h3>API Response</h3>
+          </div>
+          <div class="code-box">
+            <pre>
+{
+  "error": false,
+  "numbers": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+  ],
+  "maxPages": 4
+}
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  <script type="module" src="src/js/webpack/main.js"></script>
+</body>
+</html>
