@@ -1,0 +1,23 @@
+.items-container {
+  padding: $paddings-margins;
+  background-color: #444444;
+  border-radius: 5px;
+  text-align: center;
+
+  > h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  > .item {
+    font-size: 1rem;
+    font-weight: 300;
+    border-bottom: 1px solid $color-primary;
+    text-align: left;
+    padding: 5px 10px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}

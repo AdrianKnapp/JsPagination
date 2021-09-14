@@ -1,17 +1,15 @@
 import React from "react";
 
-import "../../assets/styles/components/main.scss";
-
 import Items from "../Items";
 import Pagination from "../Pagination";
 
-const index = () => {
+const Main = () => {
   return (
-    <div>
+    <main>
       <Items />
       <Pagination />
-    </div>
+    </main>
   );
 };
 
-export default index;
+export default Main;
