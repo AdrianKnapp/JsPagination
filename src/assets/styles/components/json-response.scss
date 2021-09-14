@@ -1,9 +1,10 @@
 aside {
-  width: 50%;
+  width: 40%;
   margin: 0;
   margin-left: $paddings-margins;
   padding: $paddings-margins;
   background-color: #444444;
+  border: 1px solid $border-color;
   border-radius: 5px;
   text-align: center;
 
@@ -11,4 +12,16 @@ aside {
     font-size: 1.2rem;
     font-weight: 500;
   }
+
+  > code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.json-response-code {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 300;
 }

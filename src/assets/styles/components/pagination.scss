@@ -1,0 +1,23 @@
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: $paddings-margins;
+
+  > .group {
+    display: flex;
+    background-color: #444444;
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0 3px;
+
+    > span {
+      margin: 0 5px;
+    }
+  }
+}
